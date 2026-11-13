@@ -198,7 +198,7 @@ export default function App() {
         <section id="about" className="section container about-section">
           <div className="about-heading">
             <p className="eyebrow section-tagline">01 / ABOUT</p>
-            <h2 className="section-title about-title">How I think<br /><span>and build</span></h2>
+            <h2 className="section-title about-title">How I think,<br /><span>learn and build</span></h2>
           </div>
           <div className="about-copy">
             <p>I'm an AI/ML engineering student, currently exploring the intersection of artificial intelligence and software engineering.</p>
@@ -225,11 +225,7 @@ export default function App() {
         </section>
         <section id="experience" className="section container">
           <p className="eyebrow section-tagline">04 / EXPERIENCE & LEARNING</p>
-          <h2 className="section-title">
-            Learning by
-            <br />
-            <span>building</span>
-          </h2>
+          <h2 className="section-title">Building skills<br /><span>through real experience</span></h2>
           <div className="experience">
             <article>
               <span>OCT — NOV 2026 · PROJECT-BASED TRAINING</span>
@@ -248,8 +244,7 @@ export default function App() {
               </p>
              
               <p className="muted">
-                Models and algorithms explored: see training materials for
-                specific methods.
+                Explored multiple models and algorithms through hands-on implementation and evaluation.
               </p>
             </article>
           </div>
@@ -294,6 +289,10 @@ export default function App() {
     </>
   );
 }
+
+
+
+
 
 
 
