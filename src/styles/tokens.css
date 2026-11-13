@@ -1,0 +1,58 @@
+:root {
+  color-scheme: dark;
+  --color-bg: #101014;
+  --color-surface: #1B1B21;
+  --color-text: #F2F0EB;
+  --color-muted: #92929B;
+  --color-warm: #B8B5AE;
+  --color-accent: #55545D;
+  --color-border: rgba(242, 240, 235, .14);
+  --font-sans: Inter, "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Helvetica Neue", Arial, sans-serif;
+  --section-tagline-font-family: var(--font-sans);
+  --section-tagline-font-size: 11px;
+  --section-tagline-font-weight: 400;
+  --section-tagline-line-height: 1.5;
+  --section-tagline-letter-spacing: .11em;
+  --section-tagline-color: var(--color-muted);
+  --space-1: .5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
+  --space-8: 4rem;
+  --space-12: 6rem;
+  --space-16: 8rem;
+  --content-width: 76rem;
+  --gutter: clamp(1.25rem, 5vw, 5rem);
+  --radius: 2px;
+  font-family: var(--font-sans);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  background: var(--color-bg);
+  color: var(--color-text);
+}
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-bg: #F2F0EB;
+  --color-surface: #B8B5AE;
+  --color-text: #101014;
+  --color-muted: #55545D;
+  --color-warm: #92929B;
+  --color-accent: #92929B;
+  --color-border: rgba(16, 16, 20, .16);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: var(--color-bg); color: var(--color-text); }
+button, a { color: inherit; font: inherit; }
+a { text-decoration: none; }
+button { border: 0; background: none; cursor: pointer; }
+:focus-visible { outline: 1px solid var(--color-warm); outline-offset: 4px; }
+::selection { background: var(--color-warm); color: var(--color-bg); }
+.container { width: min(100% - 2 * var(--gutter), var(--content-width)); margin-inline: auto; }
+.eyebrow { color: var(--color-muted); font-size: .7rem; letter-spacing: .14em; text-transform: uppercase; }
+.section-title { margin: 0; font: 400 clamp(2.5rem, 7vw, 6rem)/.98 var(--font-display); letter-spacing: -.055em; }
+@media (max-width: 640px) { :root { --space-12: 4rem; --space-16: 5rem; } }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; transition-duration: .01ms !important; } }

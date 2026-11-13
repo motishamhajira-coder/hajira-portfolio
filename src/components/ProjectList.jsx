@@ -1,0 +1,3 @@
+import { ArrowUpRight } from 'lucide-react';
+export function ProjectList({ projects, start = 1, showNumbers = true }) { return <div className="project-list">{projects.map((project,index)=><article className="project-row" key={project.title}><span className="project-num" aria-hidden="true">{showNumbers ? String(start+index).padStart(2,'0') : null}</span><div><h3>{project.title}</h3><p>{project.description}</p><small>{project.technologies.join(' · ')}</small></div><ArrowUpRight className="row-arrow" aria-hidden="true"/></article>)}</div> }
+export function UpcomingList({ projects }) { return <div className="upcoming">{projects.map(project=><article key={project.title}><span>UPCOMING</span><h3>{project.title}</h3><p>{project.description}</p></article>)}</div> }
